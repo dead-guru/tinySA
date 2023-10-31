@@ -1078,7 +1078,7 @@ typedef uint16_t pixel_t;
 [LCD_BRIGHT_COLOR_GREEN]= RGB565(  0,255,  0), \
 [LCD_DARK_GREY        ] = RGB565(140,140,140), \
 [LCD_LIGHT_GREY       ] = RGB565(220,220,220), \
-[LCD_HAM_COLOR        ] = RGB565( 80, 80, 80), \
+[LCD_HAM_COLOR        ] = RGB565(120, 80, 80), \
 [LCD_GRID_VALUE_COLOR ] = RGB565(196,196,196), \
 [LCD_M_REFERENCE      ] = RGB565(255,255,255), \
 [LCD_M_DELTA          ] = RGB565(  0,255,  0), \
@@ -1111,7 +1111,7 @@ typedef uint16_t pixel_t;
 [LCD_BRIGHT_COLOR_GREEN]= RGB565(  0,255,  0), \
 [LCD_DARK_GREY        ] = RGB565(140,140,140), \
 [LCD_LIGHT_GREY       ] = RGB565(220,220,220), \
-[LCD_HAM_COLOR        ] = RGB565( 40, 40, 40), \
+[LCD_HAM_COLOR        ] = RGB565( 80, 40, 40), \
 [LCD_GRID_VALUE_COLOR ] = RGB565(196,196,196), \
 [LCD_M_REFERENCE      ] = RGB565(255,255,255), \
 [LCD_M_DELTA          ] = RGB565(  0,255,  0), \

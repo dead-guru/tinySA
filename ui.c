@@ -1581,14 +1581,7 @@ static UI_FUNCTION_ADV_CALLBACK(menu_internals_acb)
   if (b){
     return;
   }
-  if (unlock_internals != 5432) {
-    kp_help_text = "Internals access code";
-    ui_mode_keypad(KM_CODE);
-    if (uistat.value != 5432) {
-      return;
-    }
-    unlock_internals = 5432;
-  }
+  
   menu_push_submenu(menu_settings2);
 }
 
@@ -2615,14 +2608,7 @@ static UI_FUNCTION_ADV_CALLBACK(menu_ultra_acb)
     b->icon = config.ultra == 0 ? BUTTON_ICON_NOCHECK : BUTTON_ICON_CHECK;
     return;
   }
-  if (!config.ultra) {
-    drawMessageBox("Info", "Visit tinysa.org/ultra for unlock code", 2000);
-
-    kp_help_text = "Ultra unlock code";
-    ui_mode_keypad(KM_CODE);
-    if (uistat.value != 4321)
-      return;
-  }
+  
   config.ultra = !config.ultra;
   config_save();
   reset_settings(M_LOW);
